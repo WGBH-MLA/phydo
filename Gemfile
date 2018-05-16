@@ -81,10 +81,9 @@ gem 'rdf-vocab', '2.2.8'
 gem 'blacklight_advanced_search', '~> 6.2.1'
 gem 'devise-guests', '~> 0.5'
 
-group :development, :test do
-  gem 'fcrepo_wrapper'
-  gem 'solr_wrapper', '>= 0.3'
-end
+
+gem 'fcrepo_wrapper'
+gem 'solr_wrapper', '>= 0.3'
 
 # Pin rdf-vocab to 2.2.8 because 2.2.9 updates the EBUCore ontology (and the ruby interface used to get the URIs).
 # Updating the gem will require updating which EBU predicates we're using.
